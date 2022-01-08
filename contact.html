@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Contact</h1>
+    <a href="index.html">
+        <img id="logo" src="logo.png" alt="logo">
+    </a>
 
-    <div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
 
-    </div>
+    </ul>
     <div>
         <h3>
             Feel free contact us at anytime.
         </h3>
     </div>
 
-    <form action="/action_page.php">
-        <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-    
-        <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <form class="myForm">
+        <label for="fname">First Name </label>
+        <input type="text" name="firstname" id="firstname" placeholder="Your first name.." required>
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="emailAddreess" placeholder="test@gmail.com">
+        <label for="lname">Last Name </label>
+        <input type="text" name="lastname" id="lastname" placeholder="Your last name.." required>
 
-        <label for="phone">Phone Number:</label>
-        <input type="text" id="phone" name="phoneNumber" placeholder="123-123-1234">
-    
-        <label for="subject">Question:</label>
-        <textarea id="subject" name="subject" placeholder="Your Question Here..."></textarea>
-    
-        <input type="submit" value="Submit">
-      </form>
+        <label for="email_address">Email </label>
+        <input type="email" name="email_address" id="emailaddress" placeholder="test@gmail.com">
 
-      <table>
+        <label for="phone">Phone </label>
+        <input type="tel" name="phone" id="phoneNumber">
+
+        <div id="question-box">
+            <label for="subject">Comments</label>
+            <textarea name="subject" id="subject" placeholder="Your Question Here..." maxlength="500"></textarea>
+        </div>
+        <button>Submit</button>
+    </form>
+
+    <table>
         <tr>
-          <th>Weekday</th>
-          <th>Hours</th>
+            <th>Weekday</th>
+            <th>Hours</th>
         </tr>
-        <tr>
+        <tr class="MondayToFriday">
             <td>Monday</td>
             <td>8-5</td>
         </tr>
-        <tr>
+        <tr class="MondayToFriday">
             <td>Tuesday</td>
             <td>8-5</td>
         </tr>
-        <tr>
+        <tr class="MondayToFriday">
             <td>Wednesday</td>
             <td>8-5</td>
         </tr>
-        <tr>
+        <tr class="MondayToFriday">
             <td>Thursday</td>
             <td>8-5</td>
         </tr>
-        <tr>
+        <tr class="MondayToFriday">
             <td>Friday</td>
             <td>8-5</td>
         </tr>
-        <tr>
+        <tr id="closed">
             <td>Saturday</td>
             <td>Closed</td>
         </tr>
-        <tr>
+        <tr id="closed">
             <td>Sunday</td>
             <td>Closed</td>
         </tr>
 
-      </table>
+    </table>
 </body>
+
 </html>

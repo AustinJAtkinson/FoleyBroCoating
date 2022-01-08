@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Home</h1>
+    <a href="index.html">
+        <img id="logo" src="logo.png" alt="logo">
+    </a>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
 
+    </ul>
     <div>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-
-    </div>
-    <div>
-        <span>We offer powder coating on anything material the can withstand being heated to 450F for 40 min. Please provide your item fully disassembled</span>
-        <h5>Some of the things we do on a regualr basis:</h5>
-        <ul>
+        <p>
+            <span>We offer powder coating on anything material the can withstand being heated to <span class="bold">450F</span> for 40 min. Please
+                provide your item fully disassembled</span>
+        </p>
+        <h3>Some of the things we do on a regualr basis:</h3>
+        <ul class="itmes">
             <li>Rims</li>
             <li>Frames</li>
             <li>Motorcycle Parts</li>
@@ -26,8 +32,14 @@
         </ul>
     </div>
 
-    <img src="powder-coated-rims.png">
-    <img src="MotorcycleFrame.jpg">
-
+    <div class="row">
+        <div class="column">
+            <img src="powder-coated-rims.png" alt="rims">
+        </div>
+        <div class="column">
+            <img src="MotorcycleFrame.jpg" alt="frame">
+        </div>
+    </div>
 </body>
+
 </html>
